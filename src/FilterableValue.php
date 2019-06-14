@@ -15,7 +15,7 @@ trait FilterableValue
      * @param  string|null  $column
      * @return \Laravel\Nova\Metrics\ValueResult
      */
-    protected function aggregate($request, $model, $function, $column = null)
+    protected function aggregate($request, $model, $function, $column = null, $dateColumn = NULL)
     {
         $model = $this->applyFiltersToModel($request, $model);
 
